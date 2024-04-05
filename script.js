@@ -168,7 +168,7 @@ let text2 = `'Ala' nie ma "kota"`;
 console.log(text2);
 let text3 = "\"Ala\" nie ma \'psa\'";
 console.log(text3);
-let text4 = "Caco DecoMoreno to najsmaczniejsza książka jaką piłem, jest nawet lepsza niż Pan Tadeusz";
+let text4 = "Caco DecoMoreno to najsmaczniejsza książka jaką piłem, jest nawet lepsza niż Pan Tadeusz, ale nie jest taka jak Harry Potter";
 console.log(text4.length); //długość
 console.log(text4.charAt(10)); //znak na
 console.log(text4.at(6));
@@ -194,3 +194,9 @@ console.log(text6.repeat(5)); //powtórz
 console.log(text4.replace("Caco DecoMoreno", "Harry Potter")); //zamień
 console.log(text4.replaceAll("a ", " Harry Potter ")); //zamień wszystkie
 console.log(text5.trim().split(" ")[2]); //podziel na tablice i wybierz element
+console.log(text4.indexOf("to")); //szukanie
+console.log(text4.lastIndexOf("jest"));
+console.log(text4.indexOf("jest", 20)); //szukanie od 20 znaku
+console.log(text4.includes("Potter")); //true jeśli jest
+console.log(text4.startsWith("C")); //true jeśli zaczyna sie od C
+console.log(text4.endsWith("e")); //true jeśli kończy sie na e (tutaj będzie false)
