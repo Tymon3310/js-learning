@@ -1,7 +1,3 @@
-const aa = document.getElementById('aa');
-if (aa) {
-    aa.innerHTML = "hello js";
-}
 console.log("wczytano");
 let x = 8;
 let y = 5;
@@ -200,3 +196,24 @@ console.log(text4.indexOf("jest", 20)); //szukanie od 20 znaku
 console.log(text4.includes("Potter")); //true jeśli jest
 console.log(text4.startsWith("C")); //true jeśli zaczyna sie od C
 console.log(text4.endsWith("e")); //true jeśli kończy sie na e (tutaj będzie false)
+let text7 = "krowę";
+console.log(`Kupię ${text6 + "ka"} i ${text7}`); //Template string - string w stringu 
+let r = 3;
+console.log(`Pole koła o promieniu ${r} to ${(r * Math.PI).toFixed(2)}`);
+let kodHTML = `<h2>Test</h2> 
+<ol>
+    <li>Raz</li> 
+    <li>Dwa</li>
+    <li>Trzy</li>
+</ol>`;
+document.getElementById("Template").innerHTML = kodHTML; //template HTML
+let dec = 100;
+console.log(dec + " do binarnego to: " + dec.toString(2)); //do binarnego
+console.log(dec + " do ósemkowgo to: " + dec.toString(8)); //do ósemkowego
+console.log(dec + " do dwunastkowego to: " + dec.toString(12)); // do dwunastkowego
+console.log(dec + " do szestanstkowgo to: " + dec.toString(16)); //do szesnastkowego
+let hex = 0xF21;
+console.log(hex);
+console.log("0xF21 do dziesiętnego to: " + hex.toString(10)); //z szesnastkowego do dziesiętnego
+let bin = 0b01010101;
+console.log("01010101 do dziesiętnego to: " + bin.toString(10)); // z binarnego do dziesiętnego
